@@ -1,3 +1,9 @@
+/* 
+ * Crie uma classe em Java chamada Fatura para uma loja de suprimentos de informática. A classe deve conter quatro variáveis de instância: número (String), descrição (String), quantidade comprada (int) e preço por item (double). Implemente um construtor e métodos get e set para cada variável. Adicionalmente, implemente o método getTotalFatura que calcula e retorna o valor total da fatura (quantidade × preço), considerando que valores negativos devem ser tratados como zero. Escreva um programa FaturaTeste para testar essa classe.
+
+
+ */
+
 public class Fatura {
     private String numero;
     private String descricao;
@@ -8,14 +14,10 @@ public class Fatura {
         this.numero = numero;
         this.descricao = descricao;
         this.qntCompra = qntCompra;
-        this.valor = valor;
+        this.valor = valor > 0 ? valor : 0;
     }
 
     public double getTotalFatura(){
-        if(valor < 0 ){
-            valor = 0;
-        }
-
         return valor * qntCompra;    
     }
 

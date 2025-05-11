@@ -75,6 +75,7 @@ public class Sistema {
             }
 
         } while (op != 0);
-    }
 
+        sc.close();
+    }
 }

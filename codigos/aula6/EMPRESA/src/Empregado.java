@@ -21,8 +21,8 @@ public class Empregado {
     public void setSobrenome(String sobrenome){ this.sobrenome = sobrenome; }
     public void setSalario(double salario ){ this.salario = salario; }
 
-    public void aumento(){
-        this.salario = salario + (salario * 0.1);
+    public double aumento(){
+        return this.salario = salario + (salario * 0.1);
     }
 
 }
