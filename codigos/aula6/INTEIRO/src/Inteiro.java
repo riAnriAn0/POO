@@ -17,10 +17,10 @@ public class Inteiro {
         for (int i = 0; i < 10; i++) {
             System.out.print("Insira um numerode 0 a 100 a lista: ");
             lista.insereElemento(input.nextInt());
-            input.nextLine();
+            // input.nextLine();
         }
 
-        lista.toSetString();
+        System.out.println(lista.toSetString());
 
 
         input.close();

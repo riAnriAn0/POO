@@ -1,79 +1,61 @@
-/* Implemente a classe InteiroSet, capaz de armazenar inteiros no intervalo de 0 a 100, utilizando um array de boolean. O valor true indica a presença do número no conjunto. Implemente os métodos:
-- union: retorna a união entre dois conjuntos (OU lógico).
-- interseccao: retorna a interseção entre dois conjuntos (E lógico).
-- insereElemento(int k): adiciona o elemento k ao conjunto.
-- deleteElemento(int m): remove o elemento m do conjunto.
-- toSetString(): retorna os elementos presentes como string separada por espaços, ou “–” se o conjunto for vazio.
-- ehIgualA(InteiroSet outroSet): verifica se dois conjuntos são iguais. */
-
-public class InteiroSet{
+public class InteiroSet {
     private boolean[] conjunto = new boolean[101];
 
-    public void init(){
-        this.conjunto = {false};
-    }
-
-    public boolean[] union(InteiroSet conj1, InteiroSet conj2){
-        boolean un[] = {};
-        for (int i = 0; i < conj1.conjunto.length; i++) {
-            if (conj1.conjunto[i] || conj2.conjunto[i]) {
-                un[i] = true;
-            }else{
-                un[i] = false;
-            }
+    // União entre dois conjuntos
+    public static InteiroSet union(InteiroSet conj1, InteiroSet conj2) {
+        InteiroSet resultado = new InteiroSet();
+        for (int i = 0; i <= 100; i++) {
+            resultado.conjunto[i] = conj1.conjunto[i] || conj2.conjunto[i];
         }
-        return un;
+        return resultado;
     }
 
-    public boolean[] interseccao(InteiroSet conj1, InteiroSet conj2){
-        boolean inter[] = {};
-        for (int i = 0; i < conj1.conjunto.length; i++) {
-            if (conj1.conjunto[i] && conj2.conjunto[i]) {
-                inter[i] = true;
-            }else{
-                inter[i] = false;
-            }
+    // Interseção entre dois conjuntos
+    public static InteiroSet interseccao(InteiroSet conj1, InteiroSet conj2) {
+        InteiroSet resultado = new InteiroSet();
+        for (int i = 0; i <= 100; i++) {
+            resultado.conjunto[i] = conj1.conjunto[i] && conj2.conjunto[i];
         }
-
-        return inter;
+        return resultado;
     }
 
+    // Inserir elemento no conjunto
     public void insereElemento(int k) {
         if (k < 0 || k > 100) {
-            System.out.print("Numero fora do intervalo permititdo!!!");
+            System.out.println("Número fora do intervalo permitido!");
             return;
         }
-        this.conjunto[k] = true;
+        conjunto[k] = true;
     }
-    
+
+    // Remover elemento do conjunto
     public void deleteElemento(int m) {
         if (m < 0 || m > 100) {
-            System.out.print("Numero fora do intervalo permititdo!!!");
+            System.out.println("Número fora do intervalo permitido!");
             return;
         }
-        this.conjunto[m] = false;
+        conjunto[m] = false;
     }
 
-    public void toSetString() {
-
-        System.out.println("==== Lista ====");
-        for (int i = 0; 0 < conjunto.length; i++) {
+    // Retornar o conjunto como string
+    public String toSetString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i <= 100; i++) {
             if (conjunto[i]) {
-                System.out.print(i + " ");
+                sb.append(i).append(" ");
             }
         }
+        return sb.length() > 0 ? sb.toString().trim() : "-";
+
     }
 
-    public boolean ehIgualA(InteiroSet conj1, InteiroSet conj2) {
-        for (int i = 0; i < conj1.conjunto.length; i++) {
-            if (conj1.conjunto[i] != conj2.conjunto[i]) {
-                System.out.println("Os conjuntos sao diferentes!!!");
+    // Verifica se dois conjuntos são iguais
+    public boolean ehIgualA(InteiroSet outroSet) {
+        for (int i = 0; i <= 100; i++) {
+            if (this.conjunto[i] != outroSet.conjunto[i]) {
                 return false;
             }
-
         }
         return true;
-
     }
-
 }
