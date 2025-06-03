@@ -16,9 +16,9 @@ public class FuncionarioDocente extends Funcionario{
 
     @Override
     public String toString() {
-        return "\nNome: "+ this.nome+
+        return "\n============================\nNome: "+ this.nome+
         "\nCodigo: "+ this.codigo+
         "\nSalario: "+ this.salario+
-        "\nTitulacao: "+ this.titulacao+"\n";
+        "\nTitulacao: "+ this.titulacao+"\n============================\n";
     }
 }

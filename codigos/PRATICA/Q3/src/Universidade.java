@@ -13,6 +13,38 @@ public class Universidade {
         this.qntDepartamentos = 0;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getNumeroDepartamentosMaxima() {
+        return numeroDepartamentosMaxima;
+    }
+
+    public void setNumeroDepartamentosMaxima(int numeroDepartamentosMaxima) {
+        this.numeroDepartamentosMaxima = numeroDepartamentosMaxima;
+    }
+
+    public Departamento[] getDepartamentos() {
+        return departamentos;
+    }
+
+    public void setDepartamentos(Departamento[] departamentos) {
+        this.departamentos = departamentos;
+    }
+
+    public int getQntDepartamentos() {
+        return qntDepartamentos;
+    }
+
+    public void setQntDepartamentos(int qntDepartamentos) {
+        this.qntDepartamentos = qntDepartamentos;
+    }
+
     // adiciona um novo departamento a universidade
     public void addDepartamento(Departamento novoDepartamento) {
         if(this.qntDepartamentos == this.numeroDepartamentosMaxima) {

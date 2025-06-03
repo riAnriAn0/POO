@@ -85,11 +85,19 @@ public class Departamento {
         return null;
     }
 
+    public double calcularGastosFuncionarios() {
+        double gasto = 0;
+        for(int i = 0; i < this.qntFuncionarios; i++) {
+           gasto += funcionarios[i].getSalario();
+        }
+        return gasto;
+    }
+
     @Override
     public String toString() {
-        return "\nNome: " + this.nome +
+        return  "\n============================\nNome: " + this.nome +
                 "\nCodigo: " + this.codigo +
-                "\nQnt funcionario: " + this.qntFuncionarios+"\n";
+                "\nQnt funcionario: " + this.qntFuncionarios+"\n============================\n";
     }
 }
 

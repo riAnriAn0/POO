@@ -16,10 +16,10 @@ public class FuncionarioTecnico extends Funcionario {
 
     @Override
     public String toString() {
-        return "\nNome: " + this.nome +
+        return "\n============================\nNome: " + this.nome +
         "\nCodigo: " + this.codigo +
         "\nSalario: " + this.salario +
-        "\nNivel: " + this.nivel+"\n";
+        "\nNivel: " + this.nivel+"\n============================\n";
     }
 }
 
