@@ -34,6 +34,8 @@ public class EmpregadoTeste {
         System.out.println("Salario Anual: "+(em2.getSalario()* 12));
         System.out.println("Salario com aumento: "+ em2.aumento());
 
+        
+
         input.close();
 
     }

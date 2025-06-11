@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ALUNOS/ALUNOS.iml" filepath="$PROJECT_DIR$/ALUNOS/ALUNOS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abistração/Abistração.iml" filepath="$PROJECT_DIR$/Abistração/Abistração.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BANCO/BANCO.iml" filepath="$PROJECT_DIR$/BANCO/BANCO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CLASSES/CLASSES.iml" filepath="$PROJECT_DIR$/CLASSES/CLASSES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula6/DATA/DATA.iml" filepath="$PROJECT_DIR$/aula6/DATA/DATA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula6/EMPRESA/EMPRESA.iml" filepath="$PROJECT_DIR$/aula6/EMPRESA/EMPRESA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula6/FATURA/FATURA.iml" filepath="$PROJECT_DIR$/aula6/FATURA/FATURA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula6/INTEIRO/INTEIRO.iml" filepath="$PROJECT_DIR$/aula6/INTEIRO/INTEIRO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Polimorfismo/Polimorfismo.iml" filepath="$PROJECT_DIR$/Polimorfismo/Polimorfismo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRATICA/Q1/Q1.iml" filepath="$PROJECT_DIR$/PRATICA/Q1/Q1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRATICA/Q2/Q2.iml" filepath="$PROJECT_DIR$/PRATICA/Q2/Q2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRATICA/Q3/Q3.iml" filepath="$PROJECT_DIR$/PRATICA/Q3/Q3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRATICA/Q4/Q4.iml" filepath="$PROJECT_DIR$/PRATICA/Q4/Q4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/codigos.iml" filepath="$PROJECT_DIR$/.idea/codigos.iml" />
+    </modules>
+  </component>
+</project>
